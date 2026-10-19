@@ -25,7 +25,7 @@ LexiFORM remains separate from Fork, Shared World, model-weight training, and ot
 
 **Repository initialized; experimental source release pending attribution, licensing, and nested-archive disclosure review.**
 
-No open-source license is granted by this introductory README. Code and preserved archives will be published with exact hashes, limitations, attribution and an explicit license only after their release gates have been reviewed. Historical results will not be rewritten.
+The project owner has authorized MIT licensing for LexiFORM materials they control; see the [MIT LICENSE](LICENSE). The LC-001–LC-013 archives and complete source views are **not yet uploaded**. Publication will be confirmed by a later exact, hash-bound repository commit and tag. The license cannot confer rights to material owned by other parties. Historical results will not be rewritten.
 
 Research lead: Ryan Feller · [ORCID 0009-0000-7863-5792](https://orcid.org/0009-0000-7863-5792).
 
