@@ -4,6 +4,12 @@
 
 LexiFORM is an **independent NGAST research line**, not a component, release, or performance claim of Fork. The repository preserves an experimental progression; no language-model training, general semantic understanding, external truth authentication, or deployment authority is inferred from that progression.
 
+## Citable archived research baseline
+
+**Versioned public software archive:** [LexiFORM v0.1.2 — Zenodo DOI 10.5281/zenodo.23466511](https://doi.org/10.5281/zenodo.23466511). Zenodo's GitHub integration reported this specific tag as **Published** on 2026-10-19; the [corresponding GitHub Release](https://github.com/RecomputableEvidence/lexiform-research/releases/tag/lexiform-research-baseline-v0.1.2) is tied to frozen commit `9c1ccdd32ed0d3e130f173eaed2a10e26457abdb`.
+
+This paragraph was added **after** the tagged v0.1.2 publication. It does not modify that immutable version or imply that Zenodo's downloaded archive was independently byte-recomputed in this inspection. The DOI is for the **research software baseline**, not an external evaluation of the truth of the individual experiments. [Registration and verification boundary](docs/DOI_REGISTRATION_v0.1.2.md).
+
 ## Start with the evidence
 
 - [`registry/experiments.json`](registry/experiments.json) — exact archive identities, version boundaries and the current qualification of each result.
