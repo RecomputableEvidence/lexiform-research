@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the particular LexiFORM experiment and exact version when possible."
+title: "LexiFORM: reproducible experimental research on evidence-qualified relational semantics"
+type: software
+authors:
+  - family-names: Feller
+    given-names: Ryan
+    orcid: "https://orcid.org/0009-0000-7863-5792"
+repository-code: "https://github.com/RecomputableEvidence/lexiform-research"
+license: MIT
+keywords:
+  - compositional semantics
+  - evidence provenance
+  - relational continuity
+  - reproducible research

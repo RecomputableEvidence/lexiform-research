@@ -1,0 +1,37 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'verify_manifest.py'] within disposable temp extraction
+23 manifest members match
+
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+test_cli_cross_process_and_parser (test_chain.ChainTests.test_cli_cross_process_and_parser) ... ok
+test_commitment_substitution_rejected (test_chain.ChainTests.test_commitment_substitution_rejected) ... ok
+test_external_tip_scope (test_chain.ChainTests.test_external_tip_scope) ... ok
+test_historical_step_chain_knowledge_change (test_chain.ChainTests.test_historical_step_chain_knowledge_change) ... ok
+test_identical_sample_index_changed_support (test_chain.ChainTests.test_identical_sample_index_changed_support) ... ok
+test_internal_consistency_does_not_prove_absence_of_earlier_events (test_chain.ChainTests.test_internal_consistency_does_not_prove_absence_of_earlier_events) ... ok
+test_multi_episode_boundaries (test_chain.ChainTests.test_multi_episode_boundaries) ... ok
+test_rehashed_valid_alternative_cannot_match_trusted_tip (test_chain.ChainTests.test_rehashed_valid_alternative_cannot_match_trusted_tip) ... ok
+test_reorder_and_duplicate_order_rejected (test_chain.ChainTests.test_reorder_and_duplicate_order_rejected) ... ok
+test_reproduce_chained_transition (test_chain.ChainTests.test_reproduce_chained_transition) ... ok
+test_sample_order_and_index_distinctions (test_chain.ChainTests.test_sample_order_and_index_distinctions) ... ok
+test_seeded_three_snapshot_chains (test_chain.ChainTests.test_seeded_three_snapshot_chains) ... ok
+test_skipped_intermediate_packet_rejected (test_chain.ChainTests.test_skipped_intermediate_packet_rejected) ... ok
+test_synthetic_fork_valid_endpoints_rejected_in_sequence (test_chain.ChainTests.test_synthetic_fork_valid_endpoints_rejected_in_sequence) ... ok
+test_unrelated_append_no_support_change (test_chain.ChainTests.test_unrelated_append_no_support_change) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.076s
+
+OK
+{
+  "experiment": "LC-EXP-010-RELATIONAL-CONTINUITY-001",
+  "test_count": 15,
+  "errors": 0,
+  "failures": 0,
+  "predecessor_manifests": {
+    "LC009": 39,
+    "LC008": 21
+  },
+  "passed": true
+}
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

@@ -1,0 +1,59 @@
+test_added_file_does_not_gain_origin (test_audit.AuditTests.test_added_file_does_not_gain_origin) ... ok
+test_conflicting_originals_rejected (test_audit.AuditTests.test_conflicting_originals_rejected) ... ok
+test_duplicate_archive (test_audit.AuditTests.test_duplicate_archive) ... /usr/lib/python3.13/zipfile/__init__.py:1642: UserWarning: Duplicate name: 'x'
+  return self._open_to_write(zinfo, force_zip64=force_zip64)
+ok
+test_duplicate_json_not_normalized (test_audit.AuditTests.test_duplicate_json_not_normalized) ... ok
+test_exact_null (test_audit.AuditTests.test_exact_null) ... ok
+test_json_formatting_not_values (test_audit.AuditTests.test_json_formatting_not_values) ... ok
+test_manifest_duplicate_rejected (test_audit.AuditTests.test_manifest_duplicate_rejected) ... ok
+test_manifest_traversal_rejected (test_audit.AuditTests.test_manifest_traversal_rejected) ... ok
+test_missing_member (test_audit.AuditTests.test_missing_member) ... ok
+test_pairing_by_members_not_similar_name (test_audit.AuditTests.test_pairing_by_members_not_similar_name) ... ok
+test_record_binding_tamper (test_audit.AuditTests.test_record_binding_tamper) ... ERROR
+test_source_mutation (test_audit.AuditTests.test_source_mutation) ... ok
+test_stale_manifest_separate_from_source (test_audit.AuditTests.test_stale_manifest_separate_from_source) ... ok
+test_substantive_json_preserved (test_audit.AuditTests.test_substantive_json_preserved) ... ok
+test_supplied_corpus (test_audit.AuditTests.test_supplied_corpus) ... ERROR
+test_symlink_archive (test_audit.AuditTests.test_symlink_archive) ... ok
+test_unsafe_archive (test_audit.AuditTests.test_unsafe_archive) ... ok
+
+======================================================================
+ERROR: test_record_binding_tamper (test_audit.AuditTests.test_record_binding_tamper)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmpuksn4nt6/LC-EXP-012/test_audit.py", line 57, in test_record_binding_tamper
+    result=verify_run(base/'evidence/lc011-replay',base/'history/LC-EXP-011-CLAIM-RELATIONSHIP-001.zip')
+  File "/tmp/tmpuksn4nt6/LC-EXP-012/replay.py", line 5, in verify_run
+    folder=pathlib.Path(folder);receipt=json.loads((folder/'receipt.json').read_text())
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 548, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 539, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpuksn4nt6/LC-EXP-012/evidence/lc011-replay/receipt.json'
+
+======================================================================
+ERROR: test_supplied_corpus (test_audit.AuditTests.test_supplied_corpus)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmpuksn4nt6/LC-EXP-012/test_audit.py", line 65, in test_supplied_corpus
+    base=pathlib.Path(__file__).resolve().parent;r=corpus((base/'history/LexiFORM-user-recomputed.zip').read_bytes())
+                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/pathlib/_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 539, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpuksn4nt6/LC-EXP-012/history/LexiFORM-user-recomputed.zip'
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.004s
+
+FAILED (errors=2)

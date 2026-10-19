@@ -1,0 +1,12 @@
+{
+  "unique_zip_archive_objects_scanned": 16,
+  "zip_entries_inspected": 329,
+  "maximum_nested_zip_depth": 4,
+  "file_pattern_matches": {
+    "user_paths": 1
+  },
+  "example_matched_filepaths": "withheld from public baseline report; consult local output",
+  "skipped_large_objects": [],
+  "scan_exceptions": [],
+  "scope": "pattern detection; neither complete data-loss-prevention nor legal analysis"
+}

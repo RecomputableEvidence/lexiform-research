@@ -1,0 +1,9 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'verify_manifest.py'] within disposable temp extraction
+manifest: 28 expected, 28 observed; missing=[]; extra=[]; mismatched=[]
+
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+tests exit_code 0
+demonstration exit_code 0
+benchmark exit_code 0
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

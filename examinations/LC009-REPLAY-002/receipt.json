@@ -1,0 +1,20 @@
+{
+  "schema": "lexiform-lc009-later-replay-receipt-v0.1",
+  "date_context": "2026-10-18 America/Los_Angeles; stdout receipt contains execution_utc 2026-10-19",
+  "subject": "LC-EXP-009-RELATIONAL-AUDIT-001, reconstructed runnable (NOT original external archive)",
+  "source_file": "archives/LC-EXP-009-RECONSTRUCTED-RUNNABLE.zip",
+  "source_sha256": "d2068668386340be540c2b943bebef4078a124e50a54e0692e5d310970af813b",
+  "execution_command": "python run_all.py from disposable source extraction, PYTHONDONTWRITEBYTECODE=1",
+  "direct_local_observation": {
+    "exit_code": 0,
+    "stdout_sha256": "598ee042d67a14f10a58e3cca8130aed7fbb5f39959648278f58a13e7a10bf70",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "test_groups_in_successor": 19,
+    "failure_count": 0,
+    "error_count": 0,
+    "nested_predecessor_evaluation_included": true
+  },
+  "verification_independence": "Executed here against exact archive in separately prepared local examination, no independent semantic oracle",
+  "historical_baseline_reproduction_001": "12-second attempt did not complete; remains unchanged",
+  "claim_ceiling": "Execution of reconstructed runnable and frozen predecessor chain. Original external archive, historical provenance, semantic correctness and external truth not authenticated."
+}

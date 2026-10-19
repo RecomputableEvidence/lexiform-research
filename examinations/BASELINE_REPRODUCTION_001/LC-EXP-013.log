@@ -1,0 +1,45 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'verify_manifest.py'] within disposable temp extraction
+LC013 manifest verified 28 files
+
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+test_01_competing_episode (test_lc012.LC012.test_01_competing_episode) ... ok
+test_02_cycle_must_not_claim_priority (test_lc012.LC012.test_02_cycle_must_not_claim_priority) ... ok
+test_03_counter_correction_reinstates_without_overwriting (test_lc012.LC012.test_03_counter_correction_reinstates_without_overwriting) ... ok
+test_04_two_independent_competitors_do_not_gain_order_priority (test_lc012.LC012.test_04_two_independent_competitors_do_not_gain_order_priority) ... ok
+test_05_dispute_is_not_refutation (test_lc012.LC012.test_05_dispute_is_not_refutation) ... ok
+test_06_context_annotation_not_truth_transition (test_lc012.LC012.test_06_context_annotation_not_truth_transition) ... ok
+test_07_supersession_is_policy_scoped (test_lc012.LC012.test_07_supersession_is_policy_scoped) ... ok
+test_08_missing_guard_is_unresolved_not_silent_grant (test_lc012.LC012.test_08_missing_guard_is_unresolved_not_silent_grant) ... ok
+test_09_false_guard_no_attack_true_guard_attack (test_lc012.LC012.test_09_false_guard_no_attack_true_guard_attack) ... ok
+test_10_nested_conditions_with_kleene_logic (test_lc012.LC012.test_10_nested_conditions_with_kleene_logic) ... ok
+test_11_review_context_permission_is_not_truth (test_lc012.LC012.test_11_review_context_permission_is_not_truth) ... ok
+test_12_unauthorized_review_is_rejected (test_lc012.LC012.test_12_unauthorized_review_is_rejected) ... ok
+test_13_future_evidence_and_duplicate_ids_rejected (test_lc012.LC012.test_13_future_evidence_and_duplicate_ids_rejected) ... ok
+test_14_invalid_link_types_and_self_reference (test_lc012.LC012.test_14_invalid_link_types_and_self_reference) ... ok
+test_15_history_prefix_is_exact_not_set_based (test_lc012.LC012.test_15_history_prefix_is_exact_not_set_based) ... ok
+test_16_rewrite_preserves_full_audit_projection (test_lc012.LC012.test_16_rewrite_preserves_full_audit_projection) ... ok
+test_17_reassess_preserves_old_and_new_referents (test_lc012.LC012.test_17_reassess_preserves_old_and_new_referents) ... ok
+test_18_unrelated_added_evidence_is_semantically_null (test_lc012.LC012.test_18_unrelated_added_evidence_is_semantically_null) ... ok
+test_19_withheld_link_must_not_attack (test_lc012.LC012.test_19_withheld_link_must_not_attack) ... ok
+test_20_cutoff_later_review_not_inherited (test_lc012.LC012.test_20_cutoff_later_review_not_inherited) ... ok
+test_21_unobserved_conflict_gives_unknown_not_false (test_lc012.LC012.test_21_unobserved_conflict_gives_unknown_not_false) ... ok
+test_22_link_expression_separate_from_target_truth (test_lc012.LC012.test_22_link_expression_separate_from_target_truth) ... ok
+test_23_generated_compositions_cross_paths (test_lc012.LC012.test_23_generated_compositions_cross_paths) ... ok
+test_24_generated_topologies_independent_oracle (test_lc012.LC012.test_24_generated_topologies_independent_oracle) ... ok
+test_25_permutation_invariance_of_relationship_input_order (test_lc012.LC012.test_25_permutation_invariance_of_relationship_input_order) ... ok
+test_26_invalid_expression_not_silently_coerced (test_lc012.LC012.test_26_invalid_expression_not_silently_coerced) ... ok
+test_pending_context_is_not_a_pending_attack (test_lc013.ScopedRelationshipRegression.test_pending_context_is_not_a_pending_attack) ... ok
+test_pending_correction_remains_conservative (test_lc013.ScopedRelationshipRegression.test_pending_correction_remains_conservative) ... ok
+test_pending_dispute_is_not_a_pending_attack (test_lc013.ScopedRelationshipRegression.test_pending_dispute_is_not_a_pending_attack) ... ok
+test_reassess_keeps_old_snapshot_and_scoped_differences (test_lc013.ScopedRelationshipRegression.test_reassess_keeps_old_snapshot_and_scoped_differences) ... ok
+test_reversed_link_and_cutoff_still_bound (test_lc013.ScopedRelationshipRegression.test_reversed_link_and_cutoff_still_bound) ... ok
+test_unrelated_context_has_no_targeted_projection_effect (test_lc013.ScopedRelationshipRegression.test_unrelated_context_has_no_targeted_projection_effect) ... ok
+test_unrelated_correction_guard_evidence_does_not_leak (test_lc013.ScopedRelationshipRegression.test_unrelated_correction_guard_evidence_does_not_leak) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.410s
+
+OK
+LC013 EXECUTION RECEIPT {"errors": 0, "failures": 0, "passed": true, "seconds": 0.41, "skipped": 0, "suite": "LC-EXP-013", "tests_run": 33}
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

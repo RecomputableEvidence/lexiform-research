@@ -1,0 +1,23 @@
+test_relational (unittest.loader._FailedTest.test_relational) ... ERROR
+
+======================================================================
+ERROR: test_relational (unittest.loader._FailedTest.test_relational)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_relational
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/tmp/lc009-isolated-jauj41q8/LC-EXP-009-RELATIONAL-AUDIT-001/tests/test_relational.py", line 10, in <module>
+    from evidence import sha
+ModuleNotFoundError: No module named 'evidence'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+DIRECT_TEST_EXIT_CODE=1

@@ -1,0 +1,32 @@
+{
+  "schema": "lexiform-other-lc012-intake-v0.1",
+  "uploaded_name": "LC-EXP-012.zip",
+  "sha256": "538aeda99adc0a86bb7aa96cee503edade7d17e23bfc69bd925d9595e62fd5ff",
+  "size_bytes": 69203,
+  "declared_identity": "LC-EXP-012-RECOMPUTATION-BOUND-AUDIT-001",
+  "existing_identity": "LC-EXP-012-CONTESTED-STANDING-001",
+  "identity_status": "COLLISION_UNRESOLVED_DISTINCT_BRANCHES",
+  "user_archive_structural_integrity": "ZIP_CRC_PASS",
+  "files_in_zip": 20,
+  "missing_expected_paths": [
+    "history/LexiFORM-user-recomputed.zip",
+    "history/LC-EXP-011-CLAIM-RELATIONSHIP-001.zip",
+    "evidence/lc011-replay/receipt.json",
+    "MANIFEST.sha256"
+  ],
+  "observed_from_this_incomplete_archive": {
+    "unit_cases_total": 17,
+    "unit_cases_passed": 15,
+    "unit_cases_errors_due_to_missing_evidence": 2,
+    "manifest_verifier": "MISSING",
+    "full_correspondence_with_original_and_expanded_states": "NOT_INDEPENDENTLY_RECOMPUTABLE_FROM_SUPPLIED_ZIP"
+  },
+  "source_document_reported": {
+    "historical_replayed_packages": 11,
+    "successful_reported_runs": 11,
+    "expanded_root_manifest_mismatches": 10
+  },
+  "external_authentication": "NOT_ESTABLISHED",
+  "disclosure": "NOT_ADDED_TO_PUBLIC_ARCHIVE_BASELINE_PENDING_COMPLETE_HASH_BOUND_PACKAGE_AND_RIGHTS_REVIEW",
+  "scope": "Separate verification branch; no inherited standing, no LC012 contested-standing replacement"
+}

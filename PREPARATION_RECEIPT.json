@@ -1,0 +1,27 @@
+{
+  "record": "LEXIFORM-PUBLIC-BASELINE-v0.1-PREP",
+  "date_utc": "2026-10-19",
+  "scope": "13 independently hash-checked LC-EXP archive populations; 288 internal entries; preservation plus convenience source views",
+  "source_verified": "13/13 source ZIP SHA256 exact; 288/288 native member SHA256; ZIP CRC PASS",
+  "examination_status": "historical executable claims preserved; no fresh full experiment-suite execution in preparation",
+  "disclosure_scan": "limited top-level text token/email check, 0 pattern matches",
+  "github_repository_created": false,
+  "github_repository_pushed": false,
+  "proposed_public_repository": "RecomputableEvidence/lexiform-research",
+  "external_doi_issued": false,
+  "orcid_work_imported": false,
+  "license_choice": "MIT candidate: owner review required prior to public push",
+  "nested_disclosure_scan": {
+    "unique_zips": 16,
+    "total_members": 329,
+    "credentials": 0,
+    "emails": 0,
+    "generic_linux_paths": 1
+  },
+  "replay_result": {
+    "selected_native_entrypoints_pass": 12,
+    "inconclusive_lc009_timeout": 1,
+    "total": 13,
+    "claim_ceiling": "No independent semantic oracle"
+  }
+}

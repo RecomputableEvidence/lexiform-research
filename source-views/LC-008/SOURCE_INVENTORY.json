@@ -1,0 +1,53 @@
+{
+  "source": "Supplied /mnt/data/LexiFORM.zip (unmodified)",
+  "source_sha256": "1e8a89ce567bbc0a436739389be6c2bb2c5721d1040264ea0055ee1b51ae09e5",
+  "source_bytes": 699100,
+  "archived_experiments": [
+    {
+      "original_outer_path": "LexiFORM/LC-EXP-001.zip",
+      "bytes": 26726,
+      "sha256": "1014aa4b0948ec04f0f859905a3af3dad35034368e5016300a7c29215079e9e8"
+    },
+    {
+      "original_outer_path": "LexiFORM/LC-EXP-002-SEQUENTIAL-EXAM-002.zip",
+      "bytes": 8691,
+      "sha256": "336e1711312651737cab9cfa2787704f80729950b6049f5b0506ddbf480ddb71"
+    },
+    {
+      "original_outer_path": "LexiFORM/LC-EXP-003-EVIDENCE-BOUND-EXECUTED.zip",
+      "bytes": 82140,
+      "sha256": "fa5a75c8cb9e61e508b86ed9871b778aa9625528e853b7bb3cc0807b206b947d"
+    },
+    {
+      "original_outer_path": "LexiFORM/LC-EXP-004-DESCRIPTOR-PRESSURE-001.zip",
+      "bytes": 102851,
+      "sha256": "90fd1a44eaa018fe2f713333b526fec56dc5241b956c80876915081701d9bba7"
+    },
+    {
+      "original_outer_path": "LexiFORM/LC-EXP-005-LAZY-COMPOSITION-001.zip",
+      "bytes": 128201,
+      "sha256": "c51ee49b709fe4bca705a058b37eac7ac155a6e322d8d78e3a5e0c24d4124791"
+    },
+    {
+      "original_outer_path": "LexiFORM/LC-EXP-006-DEPENDENCY-BOUND-REUSE-001.zip",
+      "bytes": 171852,
+      "sha256": "00c801c2a1068c20a370ee3de539abd064b9254ec726f69b627f3b0be454ffec"
+    },
+    {
+      "original_outer_path": "LexiFORM/LC-EXP-007-APPEND-BOUND-AUDIT-001.zip",
+      "bytes": 193441,
+      "sha256": "b47645864323e90e95ce0408d1602cc36ef801dcbc78c244bfdf0d5954d4ac00"
+    }
+  ],
+  "method_inputs": [
+    {
+      "id": "lens_removal.txt",
+      "sha256": "f9a6c997a30148a9f84998c2817b2efca21e16445dc2db4b2dbd261d9499f184"
+    },
+    {
+      "id": "LENS-SHIFT-METHOD-SPEC-v0.1.4-CANDIDATE.md",
+      "sha256": "841a12c1351df15cbabe794bf96577fe52ceab726903cee0f4e6a32bc1898e45"
+    }
+  ],
+  "note": "Hashes bind byte identities. They are not attestations of semantic correctness, original authorship or source authenticity."
+}

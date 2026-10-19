@@ -1,0 +1,24 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'verify_manifest.py'] within disposable temp extraction
+21/21 frozen manifest entries match
+
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+{
+  "assertion_groups": 52,
+  "generated_checks": 512,
+  "distinct_generated_expressions": 512,
+  "generation_attempts": 712,
+  "episode_values": [
+    "T",
+    "U",
+    "U",
+    "F"
+  ],
+  "rewrite_rule": "DE_MORGAN_ANY_TO_ALL_KLEENE",
+  "comparison_paths": [
+    "lexicon recursive",
+    "typed AST recursive",
+    "independent oracle"
+  ]
+}
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

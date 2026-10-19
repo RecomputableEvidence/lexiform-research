@@ -1,0 +1,37 @@
+{
+  "acceptance": "Fresh LC013 19/19 cases pass source-defined scalar/pending/invariance outcomes AND each bundled unit suite exits 0 AND original per-version manifests verify. A failure or unexpected error is preserved as such.",
+  "cases": 19,
+  "comparison": "Historic LC012 observable baseline, separately frozen LC013 successor scored to its own contract. LC012 is NOT rescored under LC013 rules.",
+  "environment": "Python standard library, source ZIPs from user-preserved Package 1, commands run offline with timeout, no API calls or charges.",
+  "external_motivation": "PXP-002 read-only adjudication, Case C pending-relationship scope controls",
+  "id": "NGAST-PXP-002-LEXIFORM-EXEC-PRESSURE-001",
+  "independence_limits": "Same analyst wrote controls and judged expected outcomes against published LC013 rule; three implementations share schema; no independent semantic standard, model learning or external fact validation.",
+  "matrix": "19 static fixtures C00 through C18, single-claim ATOM except C10 policy ATOM; pending scope and relation type, review timing/context, unrelated projection invariance",
+  "non_claims": [
+    "No proof of external truth or source authority",
+    "No causal Lens-method qualification",
+    "No retroactive change to LC012",
+    "No promotion of Fork repository standing"
+  ],
+  "record_type": "LOCAL_PRE_EXECUTION_TEST_FREEZE",
+  "source_archive": "/mnt/data/new.zip",
+  "source_archive_sha256": "df0606e9805d976c1ba9ff07cfc51672b8f5dc754bc3c6d180c1fb7605e7a729",
+  "source_objects": {
+    "LC-EXP-012-CONTESTED-STANDING-001": {
+      "bytes": 421613,
+      "manifest_mismatches": [],
+      "manifest_rows": 21,
+      "nested_name": "new/LC-EXP-012-CONTESTED-STANDING-001.zip",
+      "sha256": "748902021e2339691a79c1830164c02aa6382781d62a4e16f4339f3681c097ff"
+    },
+    "LC-EXP-013-SCOPED-RELATIONSHIP-001": {
+      "bytes": 480709,
+      "manifest_mismatches": [],
+      "manifest_rows": 28,
+      "nested_name": "new/LC-EXP-013-SCOPED-RELATIONSHIP-001.zip",
+      "sha256": "5a2d9bb58c15065525d6862b6686e6e5965f4dea2585c7fe7bc0e60ce2d53926"
+    }
+  },
+  "stop": "19 bounded cases; no iterative redesign after seeing outputs; unexpected failures become findings requiring a new successor.",
+  "test_script_sha256": "1e8d407cbdb050f1bbf4efc8bb0cc7532ce530aedcf9714c5f7d917481416ffe"
+}

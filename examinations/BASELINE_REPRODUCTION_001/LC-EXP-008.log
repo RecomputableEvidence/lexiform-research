@@ -1,0 +1,27 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'verify_manifest.py'] within disposable temp extraction
+21 successor files match MANIFEST.sha256
+
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+test_consistent_fork_without_anchor_does_not_authenticate_history (test_portability.PortabilityTests.test_consistent_fork_without_anchor_does_not_authenticate_history) ... ok
+test_cross_process_duplicate_json_key_rejected (test_portability.PortabilityTests.test_cross_process_duplicate_json_key_rejected) ... ok
+test_guard_macro_and_temporal_context (test_portability.PortabilityTests.test_guard_macro_and_temporal_context) ... ok
+test_huge_symbolic_witness_count_four_sampled_paths (test_portability.PortabilityTests.test_huge_symbolic_witness_count_four_sampled_paths) ... ok
+test_old_revision_remains_portable_after_append (test_portability.PortabilityTests.test_old_revision_remains_portable_after_append) ... ok
+test_out_of_process_replay_without_live_handle (test_portability.PortabilityTests.test_out_of_process_replay_without_live_handle) ... ok
+test_reject_duplicate_id_even_when_chain_recomputed (test_portability.PortabilityTests.test_reject_duplicate_id_even_when_chain_recomputed) ... ok
+test_reject_invalid_claims_and_duplicate_indices (test_portability.PortabilityTests.test_reject_invalid_claims_and_duplicate_indices) ... ok
+test_reject_mutated_packet_contents (test_portability.PortabilityTests.test_reject_mutated_packet_contents) ... ok
+test_reject_structurally_consistent_new_chain_with_stale_claim (test_portability.PortabilityTests.test_reject_structurally_consistent_new_chain_with_stale_claim) ... ok
+test_reject_witness_forgery_even_after_hash_update (test_portability.PortabilityTests.test_reject_witness_forgery_even_after_hash_update) ... ok
+test_single_revision_roundtrip_and_bound_anchor (test_portability.PortabilityTests.test_single_revision_roundtrip_and_bound_anchor) ... ok
+test_snapshot_and_handle_misbinding_rejected (test_portability.PortabilityTests.test_snapshot_and_handle_misbinding_rejected) ... ok
+test_unrelated_append_distinguishes_ledger_not_root (test_portability.PortabilityTests.test_unrelated_append_distinguishes_ledger_not_root) ... ok
+test_verifier_independent_of_lc007_step_function (test_portability.PortabilityTests.test_verifier_independent_of_lc007_step_function) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.684s
+
+OK
+LC008_RECEIPT {"claim_ceiling": "portable, full-replay-consistent declared evidence and witnesses; neither externally authenticated truth nor compact recovery", "errors": 0, "experiment": "LC-EXP-008-PORTABLE-AUDIT-001", "failures": 0, "passed": true, "predecessor_007_test_groups": 10, "predecessor_inherited_test_groups": 25, "predecessor_manifest_entries": {"03": 28, "04": 15, "05": 19, "06": 16, "07": 13}, "predecessor_sha256": "b47645864323e90e95ce0408d1602cc36ef801dcbc78c244bfdf0d5954d4ac00", "successor_test_groups": 15}
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

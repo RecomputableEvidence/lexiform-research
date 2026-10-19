@@ -1,0 +1,63 @@
+test_alternative_witness_samples_not_truth_change (test_relational.RelationalTests.test_alternative_witness_samples_not_truth_change) ... ok
+test_backward_knowledge_rejected (test_relational.RelationalTests.test_backward_knowledge_rejected) ... ok
+test_changed_truth_exact_append (test_relational.RelationalTests.test_changed_truth_exact_append) ... ok
+test_corroboration_changes_provenance_not_truth (test_relational.RelationalTests.test_corroboration_changes_provenance_not_truth) ... ok
+test_cross_process_and_json_boundaries (test_relational.RelationalTests.test_cross_process_and_json_boundaries) ... ok
+test_different_expression_and_query_rejected (test_relational.RelationalTests.test_different_expression_and_query_rejected) ... ok
+test_endpoint_and_whole_receipt_anchor_scope (test_relational.RelationalTests.test_endpoint_and_whole_receipt_anchor_scope) ... ok
+test_fork_and_truncation_rejected (test_relational.RelationalTests.test_fork_and_truncation_rejected) ... ok
+test_guarded_macro_and_expired_evidence (test_relational.RelationalTests.test_guarded_macro_and_expired_evidence) ... ok
+test_invalid_hash_and_schema (test_relational.RelationalTests.test_invalid_hash_and_schema) ... ok
+test_knowledge_only_change (test_relational.RelationalTests.test_knowledge_only_change) ... ok
+test_large_witness_indices_preserved (test_relational.RelationalTests.test_large_witness_indices_preserved) ... ok
+test_ledger_anchor_does_not_bind_context (test_relational.RelationalTests.test_ledger_anchor_does_not_bind_context) ... ok
+test_no_boolean_histogram_coercion (test_relational.RelationalTests.test_no_boolean_histogram_coercion) ... ok
+test_receipt_hash_and_endpoint_forgery (test_relational.RelationalTests.test_receipt_hash_and_endpoint_forgery) ... ok
+test_reordered_valid_endpoints_rejected_as_relation (test_relational.RelationalTests.test_reordered_valid_endpoints_rejected_as_relation) ... ok
+test_same_packet_and_empty_ledger (test_relational.RelationalTests.test_same_packet_and_empty_ledger) ... ok
+test_seeded_append_relations (test_relational.RelationalTests.test_seeded_append_relations) ... ok
+test_unrelated_append_valid_null (test_relational.RelationalTests.test_unrelated_append_valid_null) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 3.190s
+
+OK
+
+{
+  "claim_ceiling": "bounded fixed-query append relation and scoped supplied commitment matches; no authentication, method qualification or performance advantage",
+  "dependency_manifest_entries": {
+    "03": 28,
+    "04": 15,
+    "05": 19,
+    "06": 16,
+    "07": 13,
+    "08": 21
+  },
+  "errors": 0,
+  "execution_utc": "2026-10-19T05:04:58.246025+00:00",
+  "experiment": "LC-EXP-009-RELATIONAL-AUDIT-001",
+  "failures": 0,
+  "passed": true,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "predecessor_receipt": {
+    "claim_ceiling": "portable, full-replay-consistent declared evidence and witnesses; neither externally authenticated truth nor compact recovery",
+    "errors": 0,
+    "experiment": "LC-EXP-008-PORTABLE-AUDIT-001",
+    "failures": 0,
+    "passed": true,
+    "predecessor_007_test_groups": 10,
+    "predecessor_inherited_test_groups": 25,
+    "predecessor_manifest_entries": {
+      "03": 28,
+      "04": 15,
+      "05": 19,
+      "06": 16,
+      "07": 13
+    },
+    "predecessor_sha256": "b47645864323e90e95ce0408d1602cc36ef801dcbc78c244bfdf0d5954d4ac00",
+    "successor_test_groups": 15
+  },
+  "predecessor_sha256": "7af3bd382abf3289d4282a9be3d36dd10092ad9bbe0e19b5b7d15b68a85c1ddd",
+  "python": "3.13.5",
+  "tests": 19
+}

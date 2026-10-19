@@ -1,0 +1,19 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+test_chain_against_independent_replay (test_lc007.LC007Tests.test_chain_against_independent_replay) ... ok
+test_failed_append_remains_transactional (test_lc007.LC007Tests.test_failed_append_remains_transactional) ... ok
+test_full_graph_rebuild_parity_across_64_segment_append (test_lc007.LC007Tests.test_full_graph_rebuild_parity_across_64_segment_append) ... ok
+test_issued_handle_integrity_and_readonly_audit (test_lc007.LC007Tests.test_issued_handle_integrity_and_readonly_audit) ... ok
+test_no_stale_standing_future_observation (test_lc007.LC007Tests.test_no_stale_standing_future_observation) ... ok
+test_old_snapshots_exclude_later_rows_and_backwards_rejected (test_lc007.LC007Tests.test_old_snapshots_exclude_later_rows_and_backwards_rejected) ... ok
+test_random_append_stream_independent_full_graph (test_lc007.LC007Tests.test_random_append_stream_independent_full_graph) ... ok
+test_reject_forged_transition_and_tampered_rows (test_lc007.LC007Tests.test_reject_forged_transition_and_tampered_rows) ... ok
+test_selection_parity_all_temporal_states (test_lc007.LC007Tests.test_selection_parity_all_temporal_states) ... ok
+test_truth_unchanged_evidence_identity_changes (test_lc007.LC007Tests.test_truth_unchanged_evidence_identity_changes) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.200s
+
+OK
+LC007_RECEIPT {"claim_ceiling": "trusted in-process append linkage, selective audit materialization; no cryptographic authentication or lexiconic supremacy", "errors": 0, "experiment": "LC-EXP-007-APPEND-BOUND-AUDIT-001", "failures": 0, "passed": true, "predecessor_manifest": 16, "predecessor_sha256": "00c801c2a1068c20a370ee3de539abd064b9254ec726f69b627f3b0be454ffec", "predecessor_tests": 25, "successor_tests": 10}
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

@@ -1,0 +1,24 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'verify_manifest.py'] within disposable temp extraction
+39 files match the distribution manifest
+
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+Traceback (most recent call last):
+  File "/mnt/data/LEXIFORM_PUBLIC_BASELINE_v0_1/tools/reproduce_one.py", line 44, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ~~~~^^
+  File "/mnt/data/LEXIFORM_PUBLIC_BASELINE_v0_1/tools/reproduce_one.py", line 39, in main
+    p=subprocess.run(step,cwd=cwd,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=args.timeout,env={'PATH': __import__('os').environ.get('PATH',''),'PYTHONPATH':str(cwd)})
+  File "/usr/lib/python3.13/subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1222, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 2129, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1269, in _check_timeout
+    raise TimeoutExpired(
+    ...<2 lines>...
+            stderr=b''.join(stderr_seq) if stderr_seq else None)
+subprocess.TimeoutExpired: Command '['/opt/pyvenv/bin/python', 'run_all.py']' timed out after 12 seconds

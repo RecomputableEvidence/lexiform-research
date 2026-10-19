@@ -1,0 +1,12 @@
+{
+  "schema": "lexiform-research-baseline-addendum-0.1.1",
+  "predecessor_archive": "LEXIFORM_PUBLIC_RESEARCH_BASELINE_v0.1.zip",
+  "predecessor_archive_sha256": "1e3ad2ba63b459f140fd5a9f398eb8040cb3eb5ec1b68f719ad73e7019afbac7",
+  "new_upload_sha256": "538aeda99adc0a86bb7aa96cee503edade7d17e23bfc69bd925d9595e62fd5ff",
+  "lc009_replay_sha256": "d2068668386340be540c2b943bebef4078a124e50a54e0692e5d310970af813b",
+  "baseline_experiment_archive_members_changed": false,
+  "current_replay_disposition": "LC009_SUCCESSFUL_REPLAY_OF_RECONSTRUCTED_RUNNABLE",
+  "other_lc012_disposition": "INCOMPLETE_SUBMISSION_NAMESPACE_COLLISION",
+  "publication_status": "PREPARED_NOT_PUBLISHED",
+  "historical_effect": "NONE"
+}

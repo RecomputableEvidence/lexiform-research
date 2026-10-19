@@ -1,0 +1,13 @@
+name: Verify preserved LexiFORM source identities
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check archive hashes, ZIP CRC, native manifests
+        run: python3 tools/verify_sources.py

@@ -1,0 +1,230 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'verify_manifest.py'] within disposable temp extraction
+checked 28 files; disagreements=0 []
+
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+RUN: tests/test_conformance.py
+test_audit_chain_detects_tampering (__main__.Conformance.test_audit_chain_detects_tampering) ... ok
+test_cache_evidence_invalidation_and_registry_freeze (__main__.Conformance.test_cache_evidence_invalidation_and_registry_freeze) ... ok
+test_conflicting_claims_do_not_become_false (__main__.Conformance.test_conflicting_claims_do_not_become_false) ... ok
+test_independent_implementations_on_unseen_compositions (__main__.Conformance.test_independent_implementations_on_unseen_compositions) ... ok
+test_non_equivalence_and_scope (__main__.Conformance.test_non_equivalence_and_scope) ... ok
+test_three_stage_episode_and_control (__main__.Conformance.test_three_stage_episode_and_control) ... ok
+test_unknown_version_and_bad_grammar (__main__.Conformance.test_unknown_version_and_bad_grammar) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.017s
+
+OK
+RUN: src/experiment.py
+{
+  "conclusions": [
+    {
+      "stage": 0,
+      "expression": "G1(A)",
+      "authorization": "not_established",
+      "three_valued_result": "U",
+      "unmet_conditions": [
+        {
+          "condition": "inspection_passed",
+          "state": "U",
+          "reason": "missing"
+        }
+      ],
+      "evidence_state": {
+        "S": {
+          "value": "T",
+          "evidence_ids": [
+            "E001"
+          ],
+          "reason": "observed"
+        },
+        "P": {
+          "value": "U",
+          "evidence_ids": [],
+          "reason": "missing"
+        }
+      },
+      "record_evidence_ids": [
+        "E001"
+      ]
+    },
+    {
+      "stage": 1,
+      "expression": "G1(A)",
+      "authorization": "established",
+      "three_valued_result": "T",
+      "unmet_conditions": [],
+      "evidence_state": {
+        "S": {
+          "value": "T",
+          "evidence_ids": [
+            "E001"
+          ],
+          "reason": "observed"
+        },
+        "P": {
+          "value": "T",
+          "evidence_ids": [
+            "E002"
+          ],
+          "reason": "observed"
+        }
+      },
+      "record_evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    {
+      "stage": 2,
+      "expression": "G1(A)",
+      "authorization": "not_established",
+      "three_valued_result": "F",
+      "unmet_conditions": [
+        {
+          "condition": "sealed",
+          "state": "F",
+          "reason": "observed"
+        }
+      ],
+      "evidence_state": {
+        "S": {
+          "value": "F",
+          "evidence_ids": [
+            "E003"
+          ],
+          "reason": "observed"
+        },
+        "P": {
+          "value": "T",
+          "evidence_ids": [
+            "E002"
+          ],
+          "reason": "observed"
+        }
+      },
+      "record_evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    }
+  ],
+  "accepted_rewrite": {
+    "valid": true,
+    "reason": "bounded exhaustive truth-table equivalence",
+    "checked": 9
+  },
+  "rejected_rewrite": {
+    "valid": false,
+    "reason": "inequivalent under three-valued logic",
+    "checked": 4,
+    "witness": {
+      "P(A)": "U",
+      "S(A)": "T"
+    },
+    "results": [
+      "U",
+      "F"
+    ]
+  },
+  "trace_verified": true,
+  "interpreter_a_stats": {
+    "parsed": 5,
+    "definition_expansions": 1,
+    "definition_reuse_hits": 0,
+    "result_cache_hits": 8
+  }
+}
+RUN: src/benchmark.py
+{
+  "methodology": {
+    "type": "Python synthetic repeated-query CPU microbenchmark; not an end-to-end AI comparison",
+    "same_inputs": "same toy policy, observations, and three snapshot stages for all arms",
+    "query_count": 6000,
+    "per_arm_trials": 5,
+    "measurement": "perf_counter_ns; median of trials; sequential execution",
+    "warmup": "three queries, one per evidence stage",
+    "memory": "tracemalloc peak of 300 queries after fresh instantiation; Python allocations only",
+    "excluded": "natural-language interpretation, text generation, training, full registry authoring/maintenance, disk IO and external-model baselines",
+    "caution": "Interpreter A is one Python implementation; timings are not proof of inherent representational efficiency. Conventional typed baselines can also cache and reuse definitions."
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "registry_digest": "c4a8244df7029e4e9af566a78cbe1e0013847fa9624631e6ca587005f9582400"
+  },
+  "arms": [
+    {
+      "arm": "typed_uncached",
+      "queries": 6000,
+      "trials": 5,
+      "median_ms_total": 17.839,
+      "min_ms_total": 17.352,
+      "max_ms_total": 57.737,
+      "median_us_per_query": 2.973,
+      "python_traced_peak_bytes_for_300_queries": 66469
+    },
+    {
+      "arm": "typed_cached",
+      "queries": 6000,
+      "trials": 5,
+      "median_ms_total": 31.065,
+      "min_ms_total": 30.504,
+      "max_ms_total": 31.204,
+      "median_us_per_query": 5.177,
+      "python_traced_peak_bytes_for_300_queries": 6345
+    },
+    {
+      "arm": "lc_reuse_cached",
+      "queries": 6000,
+      "trials": 5,
+      "median_ms_total": 73.305,
+      "min_ms_total": 71.379,
+      "max_ms_total": 86.57,
+      "median_us_per_query": 12.218,
+      "python_traced_peak_bytes_for_300_queries": 9668
+    },
+    {
+      "arm": "lc_reuse_no_result_cache",
+      "queries": 6000,
+      "trials": 5,
+      "median_ms_total": 53.947,
+      "min_ms_total": 53.731,
+      "max_ms_total": 55.365,
+      "median_us_per_query": 8.991,
+      "python_traced_peak_bytes_for_300_queries": 85016
+    },
+    {
+      "arm": "lc_no_reuse_no_result_cache",
+      "queries": 6000,
+      "trials": 5,
+      "median_ms_total": 156.683,
+      "min_ms_total": 156.052,
+      "max_ms_total": 163.644,
+      "median_us_per_query": 26.114,
+      "python_traced_peak_bytes_for_300_queries": 172220
+    }
+  ],
+  "representation_bytes": {
+    "lexicon_query": 5,
+    "typed_json_query": 107,
+    "full_registry": 474,
+    "amortized_lexicon_storage_bytes": {
+      "1": 479,
+      "10": 524,
+      "100": 974,
+      "1000": 5474
+    },
+    "typed_json_storage_bytes": {
+      "1": 107,
+      "10": 1070,
+      "100": 10700,
+      "1000": 107000
+    }
+  },
+  "finding": "Measurements are workload-local, warm-cache-sensitive and do not establish efficiency over modern LLMs."
+}
+COMPLETED: tests, episode, benchmark. Reports are in results/.
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

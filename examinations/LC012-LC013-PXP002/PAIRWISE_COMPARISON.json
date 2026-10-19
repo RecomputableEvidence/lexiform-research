@@ -1,0 +1,219 @@
+{
+  "comparisons": [
+    {
+      "any_output_change": false,
+      "case": "C00_BASE",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C01_UNRELATED_PENDING_CORRECTION",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C02_TARGETED_PENDING_CORRECTION",
+      "changed_fields": {},
+      "lc012_value": "U",
+      "lc013_disposition": "PASS",
+      "lc013_value": "U"
+    },
+    {
+      "any_output_change": true,
+      "case": "C03_TARGETED_PENDING_DISPUTE",
+      "changed_fields": {
+        "value": {
+          "lc012": "U",
+          "lc013": "T"
+        }
+      },
+      "lc012_value": "U",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": true,
+      "case": "C04_TARGETED_PENDING_CONTEXT",
+      "changed_fields": {
+        "value": {
+          "lc012": "U",
+          "lc013": "T"
+        }
+      },
+      "lc012_value": "U",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C05_UNRELATED_PENDING_CONTEXT",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": true,
+      "case": "C06_UNRELATED_ADMITTED_CONTEXT",
+      "changed_fields": {
+        "qualifiers": {
+          "lc012": [
+            "context"
+          ],
+          "lc013": []
+        },
+        "support": {
+          "lc012": [
+            "e-a",
+            "e-b",
+            "e-u-ctx-admitted"
+          ],
+          "lc013": [
+            "e-a",
+            "e-b"
+          ]
+        }
+      },
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C07_TARGETED_ADMITTED_CORRECTION",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C08_TARGETED_WITHHELD_CORRECTION",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": true,
+      "case": "C09_UNRELATED_ADMITTED_CORRECTION",
+      "changed_fields": {
+        "support": {
+          "lc012": [
+            "e-a",
+            "e-b",
+            "e-u-cor-adm"
+          ],
+          "lc013": [
+            "e-a",
+            "e-b"
+          ]
+        }
+      },
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C10_TARGETED_PENDING_SUPERSEDES",
+      "changed_fields": {},
+      "lc012_value": "U",
+      "lc013_disposition": "PASS",
+      "lc013_value": "U"
+    },
+    {
+      "any_output_change": true,
+      "case": "C11_UNRELATED_PENDING_GUARD",
+      "changed_fields": {
+        "support": {
+          "lc012": [
+            "e-a",
+            "e-b",
+            "e-flag"
+          ],
+          "lc013": [
+            "e-a",
+            "e-b"
+          ]
+        }
+      },
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C12_TARGETED_FUTURE_REVIEW",
+      "changed_fields": {},
+      "lc012_value": "U",
+      "lc013_disposition": "PASS",
+      "lc013_value": "U"
+    },
+    {
+      "any_output_change": false,
+      "case": "C13_TARGETED_REVIEW_PAST_CUTOFF",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C14_TARGETED_PENDING_LAB_ONLY_DEFAULT",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C15_TARGETED_PENDING_LAB_ONLY_LAB",
+      "changed_fields": {},
+      "lc012_value": "U",
+      "lc013_disposition": "PASS",
+      "lc013_value": "U"
+    },
+    {
+      "any_output_change": false,
+      "case": "C16_UNRELATED_RESOLVED_FALSE",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C17_TARGETED_ADMITTED_DISPUTE",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    },
+    {
+      "any_output_change": false,
+      "case": "C18_TARGETED_ADMITTED_CONTEXT",
+      "changed_fields": {},
+      "lc012_value": "T",
+      "lc013_disposition": "PASS",
+      "lc013_value": "T"
+    }
+  ],
+  "differing_cases": [
+    "C03_TARGETED_PENDING_DISPUTE",
+    "C04_TARGETED_PENDING_CONTEXT",
+    "C06_UNRELATED_ADMITTED_CONTEXT",
+    "C09_UNRELATED_ADMITTED_CORRECTION",
+    "C11_UNRELATED_PENDING_GUARD"
+  ],
+  "experiment_id": "PXP-002-LEXIFORM-EXEC-PRESSURE-001",
+  "identical_cases": 14,
+  "number_differing": 5,
+  "originals_pristine": true
+}

@@ -1,0 +1,10 @@
+{
+  "grammar_version": "LC-EXP-001-GRAMMAR-1.0.0",
+  "logic": "strong-kleene-three-valued",
+  "definitions": {
+    "G1": {"family": "G", "version": 1, "parameter": "x", "expression": "&(S({x}),P({x}))", "purpose": "sealed AND inspection passed"},
+    "G2": {"family": "G", "version": 2, "parameter": "x", "expression": "|(S({x}),P({x}))", "purpose": "deliberately altered definition for version-difference negative control"}
+  },
+  "atom_types": {"S": "sealed", "P": "inspection_passed"},
+  "operators": {"!": 1, "&": 2, "|": 2, ">": 2}
+}

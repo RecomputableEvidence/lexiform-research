@@ -1,0 +1,26 @@
+EXECUTE ['/opt/pyvenv/bin/python', 'run_all.py'] within disposable temp extraction
+test_all_truth_table_pairs_under_proposed_join_semantics (test_choice.ChoicePressure.test_all_truth_table_pairs_under_proposed_join_semantics) ... ok
+test_invalid_endpoint_and_stage_rejections (test_choice.ChoicePressure.test_invalid_endpoint_and_stage_rejections) ... ok
+test_meet_only_expressivity_gap_is_real_but_scoped (test_choice.ChoicePressure.test_meet_only_expressivity_gap_is_real_but_scoped) ... ok
+test_nested_unfamiliar_compositions (test_choice.ChoicePressure.test_nested_unfamiliar_compositions) ... ok
+test_reassessment_order_adversary_and_strict_successor (test_choice.ChoicePressure.test_reassessment_order_adversary_and_strict_successor) ... ok
+test_reassessment_retain_both_results_and_branch_evidence (test_choice.ChoicePressure.test_reassessment_retain_both_results_and_branch_evidence) ... ok
+test_retain_all_branches_not_fictitious_combined_path (test_choice.ChoicePressure.test_retain_all_branches_not_fictitious_combined_path) ... ok
+test_seeded_unfamiliar_branch_structures (test_choice.ChoicePressure.test_seeded_unfamiliar_branch_structures) ... ok
+test_temporal_standing_cannot_be_invented_by_choice (test_choice.ChoicePressure.test_temporal_standing_cannot_be_invented_by_choice) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.550s
+
+OK
+{
+  "id": "LC-EXP-004-DESCRIPTOR-PRESSURE-001",
+  "predecessor_zip_sha256": "fa5a75c8cb9e61e508b86ed9871b778aa9625528e853b7bb3cc0807b206b947d",
+  "test_run_count": 9,
+  "failure_count": 0,
+  "error_count": 0,
+  "passed": true,
+  "claim_ceiling": "candidate bounded symbolic extension, not semantic emergence"
+}
+
+REPLAY_COMMANDS_PASSED; result scope limited to the entrypoints run

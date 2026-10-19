@@ -1,0 +1,108 @@
+{
+  "schema": "lexiform-prepublication-readonly-replay-v0.1",
+  "date_utc": "2026-10-19",
+  "executed_scope": "Unchanged archive ZIPs in disposable temporary extraction; manifest verification and native provided runner when known; no source rewrite",
+  "results": [
+    {
+      "experiment_id": "LC-EXP-001",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-001.log",
+      "native_log_sha256": "7aa50c4f2d087ecf7d6518adb5fa661d53b99ea486002fd1e14258a9d516603e",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-002",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-002.log",
+      "native_log_sha256": "f40b0b41667757c9a8f311b404cb76fb42678e37ded3bc565e04d5d98441d191",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-003",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-003.log",
+      "native_log_sha256": "a568352c9d07ec6e3d29431befd36e7efc7541a44e9d23390716d26363090410",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-004",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-004.log",
+      "native_log_sha256": "5e824ec61d4bbcd2d0661e8ff033e8f2c14ee8584fecafb9fc73ef254e164028",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-005",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-005.log",
+      "native_log_sha256": "413aa2745c3007b14d38de4c4bd6a05b82372a93fefbaf2e61ee0b1f2a68d486",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-006",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-006.log",
+      "native_log_sha256": "70eff7e9dc96e526492b7fbe9858f6898add693207b5289b1c493ff307266b1b",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-007",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-007.log",
+      "native_log_sha256": "3a094a3fd8cc9152390d38dbb2a48e6bc6fa6cdbf59974161368329d8ebf6684",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-008",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-008.log",
+      "native_log_sha256": "b8c317101d17e3cc79cce88cd2d7d5b3bf8ea85f3703dace2872f697cf368172",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-009",
+      "result": "REPLAY_NOT_COMPLETED__TIMEOUT_AT_12_SECONDS",
+      "native_log": "LC-EXP-009.log",
+      "native_log_sha256": "d43593d23e1465a1940c049e044d28843df24b8f3fe80867278263e460f27261",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-010",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-010.log",
+      "native_log_sha256": "d91131f86d55cce8db7d2f0a86a96a74ea109455bbee8619501a7ae3f1759acf",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-011",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-011.log",
+      "native_log_sha256": "9148742d25c8c9fca90c44280a826da516eb5756f2ab24e8a971a7965a21ff0b",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-012",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-012.log",
+      "native_log_sha256": "e89fe63b0faa83bb642384700610da660a9680554a66913b9d081eddc47c4e07",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    },
+    {
+      "experiment_id": "LC-EXP-013",
+      "result": "SELECTED_NATIVE_ENTRYPOINTS_PASS",
+      "native_log": "LC-EXP-013.log",
+      "native_log_sha256": "737fbb36188d96bfde1155ee256be35ee749a40c8bf6e7d0941bc123775def46",
+      "does_not_establish": "external semantics, peer-reviewed oracle, production readiness"
+    }
+  ],
+  "summary": {
+    "source_archive_hashes_verified": 13,
+    "native_manifest_hashes_verified": 288,
+    "native_entrypoints_completed_pass": 12,
+    "limited_timeout": 1,
+    "independent_oracle_executed": false
+  },
+  "LC009_note": "12-second local gate interrupted full run_all chain; separate direct unittest import attempt was an invalid entrypoint because bootstrap was missing. Neither proves LC009 implementation failed or passed on its own. Historical claims remain historical.",
+  "standing_effect": "NONE",
+  "deposit_effect": "NONE"
+}

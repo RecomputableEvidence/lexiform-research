@@ -1,0 +1,7 @@
+{
+  "grammar_version": "LC-EXP-002-REL-1.0.0",
+  "macros": {
+    "H1": {"version": 1, "parameters": ["a", "b", "c"], "expression": "C(R({a},{b}),R({b},{c}))"},
+    "H2": {"version": 2, "parameters": ["a", "b", "c"], "expression": "J(P({b}),C(R({a},{b}),R({b},{c})))"}
+  }
+}

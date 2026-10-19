@@ -1,0 +1,78 @@
+{
+  "examined_at": "2026-10-17",
+  "method_order": [
+    "Lens Removal",
+    "Lens Shift"
+  ],
+  "methods": [
+    {
+      "bytes": 54383,
+      "filename": "LENS-SHIFT-METHOD-SPEC-v0.1.4-CANDIDATE.md",
+      "raw_sha256": "841a12c1351df15cbabe794bf96577fe52ceab726903cee0f4e6a32bc1898e45"
+    },
+    {
+      "bytes": 389,
+      "filename": "lens_removal.txt",
+      "raw_sha256": "f9a6c997a30148a9f84998c2817b2efca21e16445dc2db4b2dbd261d9499f184"
+    }
+  ],
+  "outer_inputs": [
+    {
+      "bytes": 939556,
+      "filename": "LexiFORM_7xVOMU.zip",
+      "raw_sha256": "91ad7fea4e67ba018335620633d04b6e9f729c1f1fa10a9648c25563e21332e0"
+    },
+    {
+      "bytes": 19895,
+      "filename": "lens_methods_Mjq-Kw.zip",
+      "raw_sha256": "b03c76a11e782af6ef136754e822ce96bea0ba5635ec7da76e0a03e9af74d4db"
+    }
+  ],
+  "successor_predecessor": {
+    "bytes": 242553,
+    "filename": "LC-EXP-008-PORTABLE-AUDIT-001.zip",
+    "raw_sha256": "7af3bd382abf3289d4282a9be3d36dd10092ad9bbe0e19b5b7d15b68a85c1ddd"
+  },
+  "supplied_experiments": [
+    {
+      "bytes": 26726,
+      "filename": "LC-EXP-001.zip",
+      "raw_sha256": "1014aa4b0948ec04f0f859905a3af3dad35034368e5016300a7c29215079e9e8"
+    },
+    {
+      "bytes": 8691,
+      "filename": "LC-EXP-002-SEQUENTIAL-EXAM-002.zip",
+      "raw_sha256": "336e1711312651737cab9cfa2787704f80729950b6049f5b0506ddbf480ddb71"
+    },
+    {
+      "bytes": 82140,
+      "filename": "LC-EXP-003-EVIDENCE-BOUND-EXECUTED.zip",
+      "raw_sha256": "fa5a75c8cb9e61e508b86ed9871b778aa9625528e853b7bb3cc0807b206b947d"
+    },
+    {
+      "bytes": 102851,
+      "filename": "LC-EXP-004-DESCRIPTOR-PRESSURE-001.zip",
+      "raw_sha256": "90fd1a44eaa018fe2f713333b526fec56dc5241b956c80876915081701d9bba7"
+    },
+    {
+      "bytes": 128201,
+      "filename": "LC-EXP-005-LAZY-COMPOSITION-001.zip",
+      "raw_sha256": "c51ee49b709fe4bca705a058b37eac7ac155a6e322d8d78e3a5e0c24d4124791"
+    },
+    {
+      "bytes": 171852,
+      "filename": "LC-EXP-006-DEPENDENCY-BOUND-REUSE-001.zip",
+      "raw_sha256": "00c801c2a1068c20a370ee3de539abd064b9254ec726f69b627f3b0be454ffec"
+    },
+    {
+      "bytes": 193441,
+      "filename": "LC-EXP-007-APPEND-BOUND-AUDIT-001.zip",
+      "raw_sha256": "b47645864323e90e95ce0408d1602cc36ef801dcbc78c244bfdf0d5954d4ac00"
+    },
+    {
+      "bytes": 242553,
+      "filename": "LC-EXP-008-PORTABLE-AUDIT-001.zip",
+      "raw_sha256": "7af3bd382abf3289d4282a9be3d36dd10092ad9bbe0e19b5b7d15b68a85c1ddd"
+    }
+  ]
+}
